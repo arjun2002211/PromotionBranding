@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web-development</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/54ab0b6d18.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/revenue-marketing.css" />
+  </head>
+
+  <body>
+    <!-- call-button -->
+    <div class="call-button-container">
+      <div class="d-flex" id="dial-button">
+        <div class="call-container d-flex align-items-center">
+          <i class="fa-solid fa-phone phone-icon me-md-2 me-1"></i>
+        </div>
+        <div class="question-container d-flex flex-column">
+          <span class="phone-number">011 42603232</span>
+          <span>Have Query?</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- header navigation bar -->
+    <nav class="navbar navbar-expand-lg fixed-top p-0">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand m-0 p-0" href="#">
+          <img src="/img/logo.gif" id="nav-logo" alt="navbar-logo" />
+        </a>
+
+        <!-- Hamburger button for mobile view -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Offcanvas Menu -->
+        <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/why-choose-us.html">Why Choose Us</a>
+              </li>
+
+              <!-- Services dropdown -->
+              <li class="nav-item dropdown">
+                <div class="d-flex align-items-center">
+                  <!-- Service link for redirection -->
+                  <a class="nav-link" href="/services.html" id="servicesLink"
+                    >Services</a
+                  >
+
+                  <!-- Dropdown toggle on mobile (with caret icon) -->
+                  <button class="dropdown-button" id="dropdownToggleMobile">
+                    <i class="fas fa-caret-down"></i>
+                  </button>
+                </div>
+
+                <!-- Dropdown items -->
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownToggleMobile"
+                >
+                  <a
+                    href="/service/web-development.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Website Development</p>
+                  </a>
+                  <a
+                    href="/service/performance-branding.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Performance Branding</p>
+                  </a>
+                  <a
+                    href="/service/content-marketing.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Content Marketing</p>
+                  </a>
+                  <a
+                    href="/service/search-engine-optimization.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Search Engine Optimization</p>
+                  </a>
+                  <a
+                    href="/service/lead-generation.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Lead Generation</p>
+                  </a>
+                  <a
+                    href="/service/revenue-marketing.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Revenue Mrketing</p>
+                  </a>
+                  <a
+                    href="/service/social-media-marketing.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Social Media Management</p>
+                  </a>
+                  <a
+                    href="/service/ads-management.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Ads Management</p>
+                  </a>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/career.html">Career</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blogs.html">Blogs</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- #hero-section -->
+    <section id="hero-section">
+      <div id="hero-section-container">
+        <img
+          src="../img/services-hero.jpeg"
+          alt="hero-background-img"
+          class=""
+          id="hero-section-img"
+        />
+        <div
+          class="d-flex flex-column justify-content-center align-items-center services-content"
+        >
+          <h1 class="fw-bold hero-heading text-center" data-aos="fade-right">
+            Revenue Marketing and CRO
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- #about-service-section -->
+    <section id="about-service-section">
+      <div class="row m-0 mt-5">
+        <div
+          class="col-md-6 d-flex flex-column justify-content-center align-items-center service-left px-lg-5 px-md-4 px-sm-3"
+        >
+          <h3 class="fw-bold px-lg-5" id="about-service-heading">
+            5x Your Revenue With One of the Best
+            <span class="text-red">CRO</span> and
+            <span class="text-red">Revenue</span>
+          </h3>
+          <p class="about-service-paragraph ml-5 pl-5 px-lg-5">
+            Promozione Branding specializes in revenue marketing and Conversion
+            Rate Optimization (CRO) to elevate your business performance. We
+            employ data-driven strategies to enhance customer engagement and
+            drive sales. Our team focuses on optimizing every touchpoint in the
+            customer journey, ensuring higher conversion rates. Partner with us
+            to maximize your marketing investments and achieve sustainable
+            growth.
+          </p>
+        </div>
+        <div
+          class="col-md-6 d-flex justify-content-center align-items-center right"
+        >
+          <img src="./img/revenue-marketing.png" alt="revenue-marketing-img" srcset="" width="80%" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Services section -->
+
+    <section id="service-section">
+      <div class="container" data-aos="fade-up">
+        <h2 class="text-center my-sm-3 m-0 mt-5 fs-1 pt-5 fw-bold services-heading">
+          What We Bring to <span class="text-red">Revenue Marketing</span> and
+          <span class="text-red">CRO</span>
+        </h2>
+        <div class="col">
+          <div class="row" data-aos="fade-up">
+            <div class="col-md-6 service-container">
+              <div class="border services-container-content px-4">
+                <h5 class="fw-bold">Usability analysis</h5>
+                <p>
+                  Our Google Certified Ads management team in Delhi NCR
+                  specializes in optimizing campaigns across Search, Display,
+                  Remarketing, Shopping, and App Install. We craft targeted ad
+                  copy to reach the right audience in Delhi NCR. Leveraging
+                  data-driven insights, we fine-tune campaigns for efficiency
+                  and ROI. From setup to optimization, our team ensures your
+                  Google Ads drive traffic, increase conversions, and deliver
+                  measurable results for businesses in the region.
+                </p>
+                <a
+                  href="/contact.html"
+                  class="text-decoration-none know-more-button"
+                  >KNOW MORE</a
+                >
+              </div>
+            </div>
+
+            <div class="col-md-6 service-container">
+              <div class="border services-container-content px-4">
+                <h5 class="fw-bold">Data-Powered CRO</h5>
+                <p>
+                  Harness the power of Revenue Marketing in Delhi NCR with our
+                  software for data-driven conversion rate optimization. Analyze
+                  visitor behavior to personalize messaging, fine-tune your
+                  website, and improve conversion rates—driving higher revenue
+                  from the same traffic. Our platform enables you to monitor
+                  performance and make real-time adjustments, ensuring every
+                  step of the customer journey generates more revenue while
+                  reducing wasted spend and improving efficiency.
+                </p>
+                <a
+                  href="/contact.html"
+                  class="text-decoration-none know-more-button"
+                  >KNOW MORE</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-6 service-container">
+              <div class="border services-container-content px-4">
+                <h5 class="fw-bold">Promozione Branding Help</h5>
+                <p>
+                  Promozione Branding offers personalized revenue marketing
+                  strategies supported by a team of over 500 digital marketing
+                  experts. Through dedicated account management and access to
+                  MarketingCloudFX, we help you measure, optimize, and drive
+                  ROI. Our data-driven insights into business goals and industry
+                  trends ensure every marketing dollar goes further. With
+                  in-house project management tools and 24/7 client support, we
+                  focus on driving sustainable revenue growth for your business.
+                </p>
+                <a
+                  href="/contact.html"
+                  class="text-decoration-none know-more-button"
+                  >KNOW MORE</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!-- footer-section -->
+    <section id="footer-section">
+      <footer class="pt-sm-5 pb-3">
+        <div class="container p-0">
+          <div class="col">
+            <div class="row m-0 px-3">
+              <div class="col-md-3">
+                <div class="footer-section-container">
+                  <div class="">
+                    <img
+                      src="/img/Promozione-Branding-1.gif"
+                      alt="footer-logo"
+                      class="footer-logo"
+                    />
+                  </div>
+                  <p>
+                    Promozione Branding pvt. ltd. isn’t your average digital
+                    marketing agency. We’re a passionate team of award-winning
+                    marketers, designers, and developers who specialize in
+                    crafting tailor-made digital strategies for businesses like
+                    yours.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3" id="footer-services-section">
+                <div class="footer-section-container">
+                  <h4 class="fs-4 mt-4 footer-sections-heading">SERVICES</h4>
+                  <a
+                    href="/service/web-development.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Website Development</p>
+                  </a>
+                  <a
+                    href="/service/performance-branding.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Performance Branding</p>
+                  </a>
+                  <a
+                    href="/service/content-marketing.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Content Marketing</p>
+                  </a>
+                  <a
+                    href="/service/search-engine-optimization.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Search Engine Optimization</p>
+                  </a>
+                  <a
+                    href="/service/lead-generation.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Lead Generation</p>
+                  </a>
+                  <a
+                    href="/service/revenue-marketing.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Revenue Mrketing</p>
+                  </a>
+                  <a
+                    href="/service/social-media-marketing.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Social Media Management</p>
+                  </a>
+                  <a
+                    href="/service/ads-management.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Ads Management</p>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="footer-section-container">
+                  <h4 class="fs-4 mt-4 footer-sections-heading">OTHER LINKS</h4>
+                  <a href="/index.html" class="text-decoration-none text-white">
+                    <p>Home</p>
+                  </a>
+                  <a href="/about.html" class="text-decoration-none text-white">
+                    <p>About Us</p>
+                  </a>
+                  <a
+                    href="/why-choose-us.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p>Why Choose Us</p>
+                  </a>
+                  <h4 class="fs-4 mt-4 footer-sections-heading" id="Resources">
+                    Quick links
+                  </h4>
+                  <a href="/blogs.html" class="text-decoration-none text-white">
+                    <p>Blogs</p>
+                  </a>
+                  <a
+                    href="/career.html"
+                    class="text-decoration-none text-white"
+                  >
+                    <p>Career</p>
+                  </a>
+                  <a
+                    href="/contact.html"
+                    class="text-decoration-none text-white"
+                  >
+                    <p>Get in touch</p>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 footer-insight">
+                <div class="footer-section-container">
+                  <h4 class="fs-4 mt-4" id="footer-contact">GET IN TOUCH</h4>
+                  <p>Vardhman Plaza, Sector-3, Rohini, New Delhi</p>
+                  <p class="text-break">
+                    <a href="mailto:info@promozionebranding.com" class="text-white text-decoration-none">info@promozionebranding.com</a></p>
+                  <p id="dial-button"> 011 42603232</p>
+                  <div class="mt-2">
+                    <a
+                      href="https://www.facebook.com/share/1ATKsvCkfv/"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-facebook m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/promozione.branding/"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-instagram m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/company/Promozione-Branding"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-linkedin m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.whatsapp.com/catalog/919971700871/?app_absent=0"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-whatsapp m-2"></i
+                    ></a>
+                    <a
+                      href="https://x.com/Promozionebrand"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-x-twitter m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.youtube.com/@promozionebranding"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-youtube m-2"></i
+                    ></a>
+                    <a
+                      href="https://in.pinterest.com/promozionebranding/?actingBusinessId=1045890850871277698"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-pinterest m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.snapchat.com/add/promozionebrand?share_id=3WDdtK-T75c&locale=en-IN"
+                      class="text-white text-decoration-none"
+                      ><i
+                        class="fa-brands fa-2x fa-snapchat m-2 mb-4 mb-lg-2"
+                      ></i
+                    ></a>
+                  </div>
+                  <div class="d-flex d-lg-block justify-content-center">
+                    <a
+                      href="https://drive.google.com/file/d/1q-y_yifNVnGDtE6ImUrEKU4Tp-yiwFnc/view?usp=sharing "
+                      class="text-white fw-bold fs-5"
+                      >DOWNLOAD BROCHURE</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3 mt- m-0">
+          <div class="d-lg-flex justify-content-between px-3">
+            <div class="">
+              © Copyright 2024, Promozione Branding, All rights reserved.
+            </div>
+            <div class="">
+              <a href="/sitemap.html" class="text-white footer-link m-0"
+                >Sitemap |</a
+              >
+              <a href="/privacy-policy.html" class="text-white footer-link m-0"
+                >Privacy Policy |</a>
+              <a
+                href="/term-and-condition.html"
+                class="text-white footer-link m-0"
+                >Terms & Condition |</a
+              >
+              <a href="/refund-policy.html" class="text-white footer-link m-0"
+                >Refund Policy</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <input type="radio" name="section" id="section-1" checked />
+      <input type="radio" name="section" id="section-2" />
+      <input type="radio" name="section" id="section-3" />
+      <input type="radio" name="section" id="section-4" />
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/revenue-marketing.js"></script>
+  </body>
+</html>

@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/service.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/54ab0b6d18.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- call-button -->
+    <div class="call-button-container">
+      <div class="d-flex" id="dial-button">
+        <div class="call-container d-flex align-items-center">
+          <i class="fa-solid fa-phone phone-icon me-md-2 me-1"></i>
+        </div>
+        <div class="question-container d-flex flex-column">
+          <span class="phone-number">011 42603232</span>
+          <span>Have Query?</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- header navigation bar -->
+    <nav class="navbar navbar-expand-lg fixed-top p-0">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand m-0 p-0" href="#">
+          <img src="/img/logo.gif" id="nav-logo" alt="navbar-logo" />
+        </a>
+
+        <!-- Hamburger button for mobile view -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Offcanvas Menu -->
+        <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/why-choose-us.html">Why Choose Us</a>
+              </li>
+
+              <!-- Services dropdown -->
+              <li class="nav-item dropdown">
+                <div class="d-flex align-items-center">
+                  <!-- Service link for redirection -->
+                  <a class="nav-link" href="/services.html" id="servicesLink"
+                    >Services</a
+                  >
+
+                  <!-- Dropdown toggle on mobile (with caret icon) -->
+                  <button class="dropdown-button" id="dropdownToggleMobile">
+                    <i class="fas fa-caret-down"></i>
+                  </button>
+                </div>
+
+                <!-- Dropdown items -->
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownToggleMobile"
+                >
+                  <a
+                    href="/service/web-development.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Website Development</p>
+                  </a>
+                  <a
+                    href="/service/performance-branding.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Performance Branding</p>
+                  </a>
+                  <a
+                    href="/service/content-marketing.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Content Marketing</p>
+                  </a>
+                  <a
+                    href="/service/search-engine-optimization.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Search Engine Optimization</p>
+                  </a>
+                  <a
+                    href="/service/lead-generation.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Lead Generation</p>
+                  </a>
+                  <a
+                    href="/service/revenue-marketing.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Revenue Mrketing</p>
+                  </a>
+                  <a
+                    href="/service/social-media-marketing.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Social Media Management</p>
+                  </a>
+                  <a
+                    href="/service/ads-management.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Ads Management</p>
+                  </a>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/career.html">Career</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blogs.html">Blogs</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero-section -->
+    <section id="hero-section">
+      <div id="hero-section-container">
+        <img
+          src="img/services-hero.jpeg"
+          alt="hero-background-img"
+          class=""
+          id="hero-section-img"
+        />
+        <!-- <img src="/img/service.png" alt="" id="hero-section-img"> -->
+        <div
+          class="d-flex flex-column justify-content-center align-items-center services-content"
+        >
+          <h1 class="fw-bold hero-heading" data-aos="fade-right">Services</h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="services-section">
+      <div class="container-fluid mb-5">
+        <div class="row my-5 text-center">
+          <h5 class="mb-4">Crafting Your Digital Legacy</h5>
+          <h2 class="fw-bold fs-1">OUR SERVICES</h2>
+        </div>
+        <div class="row pb-sm-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+          <div class="position-relative mb-3" data-aos="fade-up">
+            <div class="services-item mb-2">
+              <div class="text-center px-4">
+                <img
+                  src="img/s1-icon-2.webp"
+                  alt="web-development-icon"
+                  class="services-img mb-3"
+                />
+                <h3 class="fw-bold mb-3">Web development</h3>
+                <p class="mb-5">
+                  Development We build extensible cloud-based backend solutions
+                  for mobile and web apps that scale together with your growing
+                  business needs
+                </p>
+              </div>
+              <hr size="4px" color="white" />
+              <div class="px-sm-4">
+                <h5 class="fw-bold mb-2 mt-4">
+                  <i class="fa-solid fa-arrow-right mx-2"></i>Website
+                  Maintenance
+                </h5>
+                <h5 class="fw-bold">
+                  <i class="fa-solid fa-arrow-right mx-2"></i> Web Re-Design
+                </h5>
+                <h5 class="fw-bold">
+                  <i class="fa-solid fa-arrow-right mx-2"></i>UI / UX Design
+                </h5>
+              </div>
+              <a href="/service/web-development.html" class="text-white">
+                <h5 class="services-redirect-button">
+                  <i class="fa-solid fa-arrow-right fa-2x mx-2"></i>
+                </h5>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 position-relative mb-3">
+            <div class="services-item mb-2">
+              <div class="text-center px-4">
+                <img
+                  src="img/s1-icon-5.webp"
+                  alt="performance-branding-icon"
+                  class="services-img mb-3"
+                />
+                <h3 class="fw-bold mb-3">Performance Branding</h3>
+                <p class="mb-5">
+                  We create an integrated strategy that aligns brand, audience &
+                  channel, delivering a cohesive customer experience.
+                </p>
+              </div>
+              <hr size="4px" color="white" />
+              <div class="px-sm-4">
+                <h5 class="fw-bold mb-4 mt-4">
+                  <i class="fa-solid fa-arrow-right mx-2"></i>Branding Strategy
+                </h5>
+                <h5 class="fw-bold">
+                  <i class="fa-solid fa-arrow-right mx-2"></i>Brand Development
+                </h5>
+                <h5 class="fw-bold">
+                  <i class="fa-solid fa-arrow-right mx-2"></i>Demand Generation
+                </h5>
+              </div>
+              <a href="/service/performance-branding.html" class="text-white">
+                <h5 class="services-redirect-button">
+                  <i class="fa-solid fa-arrow-right fa-2x mx-2"></i>
+                </h5>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 position-relative mb-3"
+            data-aos="fade-up"
+          >
+            <div class="services-item mb-2">
+              <div class="text-center px-4">
+                <img
+                  src="img/s1-icon-1.webp"
+                  alt="content-marketing-icon"
+                  class="services-img mb-3"
+                />
+                <h3 class="fw-bold">Content Marketing</h3>
+                <p class="mb-5">
+                  We use AI to speed up the commoditized parts of the content
+                  creation process, not to replace the critical ones.
+                </p>
+              </div>
+              <hr size="4px" color="white" />
+              <div class="px-sm-4">
+                <h5 class="fw-bold mt-4">
+                  <i class="fa-solid fa-arrow-right mx-2"></i>Email Marketing
+                </h5>
+                <h5 class="fw-bold">
+                  <i class="fa-solid fa-arrow-right mx-2"></i>Blog Building
+                </h5>
+                <h5 class="fw-bold">
+                  <i class="fa-solid fa-arrow-right mx-2"></i>Infographic
+                </h5>
+              </div>
+              <a href="/service/content-marketing.html" class="text-white">
+                <h5 class="services-redirect-button">
+                  <i class="fa-solid fa-arrow-right fa-2x mx-2"></i>
+                </h5>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6 position-relative mb-3"
+            data-aos="fade-up"
+          >
+            <div class="services-item mb-2">
+              <div class="text-center px-4">
+                <img
+                  src="img/s1-icon-2.webp"
+                  alt="search-engine-optimization"
+                  class="services-img mb-3"
+                />
+                <h3 class="fw-bold mb-3">Search Engine Optimization</h3>
+                <p class="mb-5">
+                  We offer Enterprise SEO services, Local SEO Services, On page
+                  SEO & Off page SEO that ease the complexity of SEO,
+                </p>
+              </div>
+              <hr size="4px" color="white" />
+              <div class="px-sm-4">
+                <h5 class="fw-bold mt-4">
+                  <i class="fa-solid fa-arrow-right mx-2"></i>On Page SEO
+                </h5>
+                <h5 class="fw-bold">
+                  <i class="fa-solid fa-arrow-right mx-2"></i>Off Page SEO
+                </h5>
+                <h5 class="fw-bold">
+                  <i class="fa-solid fa-arrow-right mx-2"></i>Mobile SEO
+                </h5>
+              </div>
+              <a
+                href="/service/search-engine-optimization.html"
+                class="text-white"
+              >
+                <h5 class="services-redirect-button">
+                  <i class="fa-solid fa-arrow-right fa-2x mx-2"></i>
+                </h5>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 position-relative mb-3">
+            <div class="services-item mb-2">
+              <div class="text-center px-4">
+                <img
+                  src="img/s1-icon-5.webp"
+                  alt="lead-generation"
+                  class="services-img mb-3"
+                />
+                <h3 class="fw-bold mb-3">Lead Generation</h3>
+                <p class="mb-5">
+                  We are your business's best lead generation company to improve
+                  sales, increase brand awareness, & generate qualified leads.
+                </p>
+              </div>
+              <hr size="4px" color="white" />
+              <div class="px-sm-4">
+                <h5 class="fw-bold mt-4">
+                  <i class="fa-solid fa-arrow-right mx-2"></i>For B2C Companies
+                </h5>
+                <h5 class="fw-bold">
+                  <i class="fa-solid fa-arrow-right mx-2"></i>For B2B Companies
+                </h5>
+                <h5 class="fw-bold">
+                  <i class="fa-solid fa-arrow-right mx-2"></i>Quality Leads
+                </h5>
+              </div>
+              <a href="/service/lead-generation.html" class="text-white">
+                <h5 class="services-redirect-button">
+                  <i class="fa-solid fa-arrow-right fa-2x mx-2"></i>
+                </h5>
+              </a>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 position-relative mb-3"
+            data-aos="fade-up"
+          >
+            <div class="services-item mb-2">
+              <div class="text-center px-4">
+                <img
+                  src="img/s1-icon-1.webp"
+                  alt="social-media-marketing-img"
+                  class="services-img mb-3"
+                />
+                <h3 class="fw-bold mb-3">Social Media Marketing</h3>
+                <p class="mb-5">
+                  We’re a renowned Social Media Marketing Agency that takes
+                  pride in helping businesses grow through our customized
+                  strategies.
+                </p>
+              </div>
+              <hr size="4px" color="white" />
+              <div class="px-sm-4">
+                <h5 class="fw-bold mt-4">
+                  <i class="fa-solid fa-arrow-right mx-2"></i>LinkedIn Account
+                </h5>
+                <h5 class="fw-bold">
+                  <i class="fa-solid fa-arrow-right mx-2"></i>Facebook Account
+                </h5>
+                <h5 class="fw-bold">
+                  <i class="fa-solid fa-arrow-right mx-2"></i>Instagram Account
+                </h5>
+              </div>
+              <a href="/service/social-media-marketing.html" class="text-white">
+                <h5 class="services-redirect-button">
+                  <i class="fa-solid fa-arrow-right fa-2x mx-2"></i>
+                </h5>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+        <div
+          class="col-lg-4 col-md-6 position-relative mb-3"
+          data-aos="fade-up">
+          <div class="services-item mb-2">
+            <div class="text-center px-4">
+              <img src="img/s1-icon-1.webp" alt="ads-management-img" class="services-img mb-3" />
+              <h3 class="fw-bold mb-3">Ads Management</h3>
+              <p class="mb-5">
+                Let our experts handle your complex Google and social ad
+                campaigns, freeing up your time to focus on core business.
+              </p>
+            </div>
+            <hr size="4px" color="white" />
+            <div class="px-sm-4">
+              <h5 class="fw-bold mt-4">
+                <i class="fa-solid fa-arrow-right mx-2"></i>Google Ads
+              </h5>
+              <h5 class="fw-bold">
+                <i class="fa-solid fa-arrow-right mx-2"></i>Facebook Ads
+              </h5>
+              <h5 class="fw-bold">
+                <i class="fa-solid fa-arrow-right mx-2"></i>Youtube Ads
+              </h5>
+            </div>
+            <a href="/service/ads-management.html" class="text-white">
+              <h5 class="services-redirect-button">
+                <i class="fa-solid fa-arrow-right fa-2x mx-2"></i>
+              </h5>
+            </a>
+          </div>
+        </div>
+        <div
+          class="col-lg-4 col-md-6 position-relative mb-3"
+          data-aos="fade-up"
+        >
+          <div class="services-item mb-2">
+            <div class="text-center px-4">
+              <img src="img/s1-icon-1.webp" alt="revenue-marketing-img" class="services-img mb-3" />
+              <h3 class="fw-bold mb-3">Revnue Marketing and CRO</h3>
+              <p class="mb-5">
+                Let our experts handle your complex Google and social ad
+                campaigns, freeing up your time to focus on core business.
+              </p>
+            </div>
+            <hr size="4px" color="white" />
+            <div class="px-sm-4">
+              <h5 class="fw-bold mt-4">
+                <i class="fa-solid fa-arrow-right mx-2"></i>Google Ads
+              </h5>
+              <h5 class="fw-bold">
+                <i class="fa-solid fa-arrow-right mx-2"></i>Facebook Ads
+              </h5>
+              <h5 class="fw-bold">
+                <i class="fa-solid fa-arrow-right mx-2"></i>Youtube Ads
+              </h5>
+            </div>
+            <a href="/service/revenue-marketing.html" class="text-white">
+              <h5 class="services-redirect-button">
+                <i class="fa-solid fa-arrow-right fa-2x mx-2"></i>
+              </h5>
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="help-section">
+      <div class="container-fluid mb-5 help-section-container p-0">
+        <img src="img/services-help-bg.jpg" alt="youtube-icon" />
+        <a
+          href="https://youtu.be/PqYQ6r7q508?si=s1aLYfEhIx7hIHRl"
+          class="text-white"
+        >
+          <div class="rotation-animation-container" data-aos="fade-down">
+            <div class="animation-wrapper">
+              <i class="fa-solid fa-play fa-2x pause-icon"></i>
+              <svg
+                id="rotatingText"
+                viewBox="0 0 200 200"
+                width="200"
+                height="200"
+              >
+                <defs>
+                  <path
+                    id="circle"
+                    d="M 100, 100
+                        m -75, 0
+                        a 75, 75 0 1, 0 150, 0
+                        a 75, 75 0 1, 0 -150, 0
+                        "
+                  ></path>
+                </defs>
+                <text width="400">
+                  <textPath
+                    alignment-baseline="top"
+                    xlink:href="#circle"
+                    class="text animation-text"
+                  >
+                    Promozione Branding Private Limited
+                  </textPath>
+                </text>
+              </svg>
+            </div>
+          </div>
+        </a>
+        <div class="help-heading-container">
+          <h2 class="help-heading fs-1">We Help Your Business To Become Stronger</h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="brand-section" class="py-5">
+      <span class="brand-span">
+        <img src="/img/service-shap.png" alt="service-shape" srcset="" height="100%" width="100%">
+      </span>
+      <div class="row m-0">
+        <div class="col-md-4"></div>
+        <div class="col-md-8 position-relative">
+          <p class="brand-subheading fw-bold m-0">Best In Class Digital Marketing Experience In Delhi NCR</p>
+          <h2 class="fw-bold mb-4 fs-1 brand-heading ">
+            Let's Strategize Your Brand's Experience
+          </h2>
+          <p>We offer a comprehensive range of digital marketing services designed to help businesses thrive in the online landscape.</p>
+          <div class="row m-0 d-flex justify-content-center ">
+            <div class="col-md-9 brand-container p-3">
+              <div class="row m-0 d-flex align-items-center">
+                <div class="col-4 col-sm-6 p-sm-5 d-flex flex-column">
+                  <i class="fa-regular fa-3x fw-bold fa-lightbulb mb-4"></i>
+                  <h3 class="fw-bold">Brand Identity</h3>
+
+                </div>
+                <div class="col-8 col-sm-6"> 
+                  <ul class="brand-ui">
+                  <li class="fw-bold">Visual Branding</li>
+                  <li class="fw-bold">Branding Strategy</li>
+                  <li class="fw-bold">Identity Building</li>
+                  <li class="fw-bold">Brand Guidlines</li>
+                  <li class="fw-bold">Mocup Design</li>
+                </ul>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- faq-section -->
+    <section id="faq-section">
+      <div class="container-fluid py-sm-5 my-5">
+        <div class="col">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="background-design">
+                <img
+                  src="img/thumbs-up.jpg"
+                  alt="thumbs-up-man"
+                  id="faq-img"
+                  data-aos="fade-right"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+              <div class="faq-accordian">
+                <p id="faq-subtitle" class="mb-4">Any Question</p>
+                <h2 id="faq-heading " class="fw-bold pb-md-5 fs-1 pb-sm-3">
+                  Have Any <span class="faq-heading-question">Question</span> to
+                  Ask
+                </h2>
+                <div>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          What Is Promozione Branding?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          As a digital marketing agency, Promozione Branding
+                          Private Limited is your partner in driving brand
+                          growth and online success. We specialize in crafting
+                          tailored digital strategies that amplify your brand's
+                          presence, engage your target audience, and deliver
+                          measurable results. With a focus on innovative
+                          thinking, quality execution, and a deep understanding
+                          of market trends, we help businesses achieve higher
+                          ROI and sustainable growth in the digital landscape.
+                          Whether through SEO, social media, content creation,
+                          or web development, we ensure your brand stands out
+                          and connects with the right people at the right time.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          How do Promozione Branding differ from traditional
+                          ones?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          Promozione Branding Private Limited stands apart from
+                          traditional marketing agencies by focusing solely on
+                          digital marketing and leveraging the latest online
+                          tools and technologies. Unlike agencies that use a mix
+                          of conventional media, we rely on data-driven,
+                          real-time optimization for agile and responsive
+                          campaigns. Our digital-first approach delivers
+                          cost-effective solutions with precise targeting and
+                          measurable ROI. Through innovative technologies and a
+                          comprehensive suite of digital services, we offer
+                          tailored strategies that align with each client’s
+                          specific needs. This specialization ensures deeper
+                          expertise and a personalized, results-oriented client
+                          experience
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          Why should I hire a Promozione Branding?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          Hiring a digital agency allows you to leverage
+                          professional expertise, advanced tools, and strategic
+                          insights to effectively manage and enhance your online
+                          presence, driving better results and supporting your
+                          business growth.
+                        </div>
+                      </div>
+                    </div>
+                    <!-- created by arjunprajapat2002211@gmail.com -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="heading4">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapse4"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          Can a Promozione Branding help with website design?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapse4"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="heading4"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          Yes Ofcurse! Promozione Branding focus on creating a
+                          seamless and intuitive user experience. This includes
+                          designing easy-to-navigate interfaces, optimizing site
+                          layout, and ensuring that the website is responsive
+                          and accessible across all device We also integrate SEO
+                          best practices into the design process, including
+                          optimized site structure, fast loading times, and
+                          mobile-friendliness, which helps improve your site's
+                          visibility on search engines.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer-section -->
+    <section id="footer-section">
+      <footer class="pt-sm-5 pb-3">
+        <div class="container p-0">
+          <div class="col">
+            <div class="row m-0 px-3">
+              <div class="col-md-3">
+                <div class="footer-section-container">
+                  <div class="">
+                    <img
+                      src="/img/Promozione-Branding-1.gif"
+                      alt="footer-logo"
+                      class="footer-logo"
+                    />
+                  </div>
+                  <p>
+                    Promozione Branding pvt. ltd. isn’t your average digital
+                    marketing agency. We’re a passionate team of award-winning
+                    marketers, designers, and developers who specialize in
+                    crafting tailor-made digital strategies for businesses like
+                    yours.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3" id="footer-services-section">
+                <div class="footer-section-container">
+                  <h4 class="fs-4 mt-4 footer-sections-heading">SERVICES</h4>
+                  <a
+                    href="/service/web-development.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Website Development</p>
+                  </a>
+                  <a
+                    href="/service/performance-branding.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Performance Branding</p>
+                  </a>
+                  <a
+                    href="/service/content-marketing.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Content Marketing</p>
+                  </a>
+                  <a
+                    href="/service/search-engine-optimization.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Search Engine Optimization</p>
+                  </a>
+                  <a
+                    href="/service/lead-generation.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Lead Generation</p>
+                  </a>
+                  <a
+                    href="/service/revenue-marketing.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Revenue Mrketing</p>
+                  </a>
+                  <a
+                    href="/service/social-media-marketing.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Social Media Management</p>
+                  </a>
+                  <a
+                    href="/service/ads-management.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Ads Management</p>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="footer-section-container">
+                  <h4 class="fs-4 mt-4 footer-sections-heading">OTHER LINKS</h4>
+                  <a href="/index.html" class="text-decoration-none text-white">
+                    <p>Home</p>
+                  </a>
+                  <a href="/about.html" class="text-decoration-none text-white">
+                    <p>About Us</p>
+                  </a>
+                  <a
+                    href="/why-choose-us.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p>Why Choose Us</p>
+                  </a>
+                  <h4 class="fs-4 mt-4 footer-sections-heading" id="Resources">
+                    Quick links
+                  </h4>
+                  <a href="/blogs.html" class="text-decoration-none text-white">
+                    <p>Blogs</p>
+                  </a>
+                  <a
+                    href="/career.html"
+                    class="text-decoration-none text-white"
+                  >
+                    <p>Career</p>
+                  </a>
+                  <a
+                    href="/contact.html"
+                    class="text-decoration-none text-white"
+                  >
+                    <p>Get in touch</p>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 footer-insight">
+                <div class="footer-section-container">
+                  <h4 class="fs-4 mt-4" id="footer-contact">GET IN TOUCH</h4>
+                  <p>Vardhman Plaza, Sector-3, Rohini, New Delhi</p>
+                  <p class="text-break">
+                    <a href="mailto:info@promozionebranding.com" class="text-white text-decoration-none">info@promozionebranding.com</a></p>
+                  <p id="dial-button"> 011 42603232</p>
+                  <div class="mt-2">
+                    <a
+                      href="https://www.facebook.com/share/1ATKsvCkfv/"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-facebook m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/promozione.branding/"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-instagram m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/company/Promozione-Branding"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-linkedin m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.whatsapp.com/catalog/919971700871/?app_absent=0"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-whatsapp m-2"></i
+                    ></a>
+                    <a
+                      href="https://x.com/Promozionebrand"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-x-twitter m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.youtube.com/@promozionebranding"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-youtube m-2"></i
+                    ></a>
+                    <a
+                      href="https://in.pinterest.com/promozionebranding/?actingBusinessId=1045890850871277698"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-pinterest m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.snapchat.com/add/promozionebrand?share_id=3WDdtK-T75c&locale=en-IN"
+                      class="text-white text-decoration-none"
+                      ><i
+                        class="fa-brands fa-2x fa-snapchat m-2 mb-4 mb-lg-2"
+                      ></i
+                    ></a>
+                  </div>
+                  <div class="d-flex d-lg-block justify-content-center">
+                    <a
+                      href="https://drive.google.com/file/d/1q-y_yifNVnGDtE6ImUrEKU4Tp-yiwFnc/view?usp=sharing "
+                      class="text-white fw-bold fs-5"
+                      >DOWNLOAD BROCHURE</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3 mt- m-0">
+          <div class="d-lg-flex justify-content-between px-3">
+            <div class="">
+              © Copyright 2024, Promozione Branding, All rights reserved.
+            </div>
+            <div class="">
+              <a href="/sitemap.html" class="text-white footer-link m-0"
+                >Sitemap |</a
+              >
+              <a href="/privacy-policy.html" class="text-white footer-link m-0"
+                >Privacy Policy |</a>
+              <a
+                href="/term-and-condition.html"
+                class="text-white footer-link m-0"
+                >Terms & Condition |</a
+              >
+              <a href="/refund-policy.html" class="text-white footer-link m-0"
+                >Refund Policy</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <input type="radio" name="section" id="section-1" checked />
+      <input type="radio" name="section" id="section-2" />
+      <input type="radio" name="section" id="section-3" />
+      <input type="radio" name="section" id="section-4" />
+      <input type="radio" name="section" id="section-5" />
+    </div>
+
+    <script src="js/services.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

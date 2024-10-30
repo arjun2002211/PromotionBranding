@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/54ab0b6d18.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/blogs.css" />
+  </head>
+
+  <body>
+    <!-- call-button -->
+    <div class="call-button-container">
+      <div class="d-flex" id="dial-button">
+        <div class="call-container d-flex align-items-center">
+          <i class="fa-solid fa-phone phone-icon me-md-2 me-1"></i>
+        </div>
+        <div class="question-container d-flex flex-column">
+          <span class="phone-number">011 42603232</span>
+          <span>Have Query?</span>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg fixed-top p-0">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand m-0 p-0" href="#">
+          <img src="/img/logo.gif" id="nav-logo" alt="navbar-logo" />
+        </a>
+
+        <!-- Hamburger button for mobile view -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Offcanvas Menu -->
+        <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/why-choose-us.html">Why Choose Us</a>
+              </li>
+
+              <!-- Services dropdown -->
+              <li class="nav-item dropdown">
+                <div class="d-flex align-items-center">
+                  <!-- Service link for redirection -->
+                  <a class="nav-link" href="/services.html" id="servicesLink"
+                    >Services</a
+                  >
+
+                  <!-- Dropdown toggle on mobile (with caret icon) -->
+                  <button class="dropdown-button" id="dropdownToggleMobile">
+                    <i class="fas fa-caret-down"></i>
+                  </button>
+                </div>
+
+                <!-- Dropdown items -->
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownToggleMobile"
+                >
+                  <a
+                    href="/service/web-development.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Website Development</p>
+                  </a>
+                  <a
+                    href="/service/performance-branding.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Performance Branding</p>
+                  </a>
+                  <a
+                    href="/service/content-marketing.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Content Marketing</p>
+                  </a>
+                  <a
+                    href="/service/search-engine-optimization.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Search Engine Optimization</p>
+                  </a>
+                  <a
+                    href="/service/lead-generation.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Lead Generation</p>
+                  </a>
+                  <a
+                    href="/service/revenue-marketing.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Revenue Mrketing</p>
+                  </a>
+                  <a
+                    href="/service/social-media-marketing.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Social Media Management</p>
+                  </a>
+                  <a
+                    href="/service/ads-management.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Ads Management</p>
+                  </a>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/career.html">Career</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blogs.html">Blogs</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- #hero-section -->
+    <section id="hero-section">
+      <div id="hero-section-container">
+        <img
+          src="../img/services-hero.jpeg"
+          alt="hero-background-img"
+          class=""
+          id="hero-section-img"
+        />
+        <div
+          class="d-flex flex-column justify-content-center align-items-center services-content"
+        >
+          <h1 class="fw-bold hero-heading1 text-center" data-aos="fade-right">
+            7 Ways to Create Engaging Navratri Content
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- blogs-section -->
+    <section id="blogs-section" class="py-5">
+      <div class="container-lg">
+        <div class="row m-0">
+          <div class="col-lg-8">
+            <div class="blogs-wrapper">
+              <div class="blog">
+                <article>
+                  <div class="card p-4 mb-4">
+                    <img
+                      src="/img/blog-3.webp"
+                      class="blog-img rounded"
+                      alt="blog-img"
+                    />
+                    <div class="text-red">
+                      <small class="me-4 fw-bold"
+                        ><i class="fa-user fa-solid me-1"></i>BY :
+                        PBPLDELHI</small
+                      >
+                      <small class="me-4 fw-bold"
+                        ><i class="fa-calendar fa-solid me-1"></i>OCTOBER
+                        03,2024</small
+                      >
+                      <small class="me-4 fw-bold"
+                        ><i class="fa-comment fa-solid me-1"></i>COMMENTS
+                        (0)</small
+                      >
+                    </div>
+                    <hr />
+                    <h2 class="fw-bold">
+                      7 Ways to Create Engaging Navratri Content
+                    </h2>
+                    <p>
+                      As the owner of Promozione Branding, a digital marketing
+                      agency, I &#8217;m excited to share my expertise on how
+                      businesses can create engaging Navratri content that
+                      resonates with their target audience. In this blog post,
+                      we &#8217;ll explore 7 ways to create engaging Navratri
+                      content using trending keywords and hashtags.
+                    </p>
+                    <h2 class="wp-block-heading">
+                      <strong
+                        >Why is Navratri Important for Digital
+                        Marketing?</strong
+                      >
+                    </h2>
+                    <p>
+                      Navratri, which translates to &#8220;nine nights &#8221;in
+                      Sanskrit, is a significant Hindu festival celebrated over
+                      nine nights and ten days. It &#8217;s a time of great
+                      fervor and enthusiasm, marked by worship, music, dance,
+                      and feasting. The festival honors the divine feminine,
+                      with each night dedicated to a different aspect of the
+                      goddess Durga.
+                    </p>
+                    <p>
+                      <strong
+                        >7 Ways to Create Engaging Navratri Content</strong
+                      >
+                    </p>
+                    <ol class="wp-block-list">
+                      <li>
+                        <strong>Create a Navratri-Themed Blog Post</strong>
+                      </li>
+                    </ol>
+                    <p>
+                      Develop an informative blog post that highlights the
+                      significance of Navratri and its cultural importance. Use
+                      trending keywords like &#8220;Navratri Celebrations
+                      &#8221;and &#8220;Durga Puja &#8221;to optimize your
+                      content for search engines.
+                    </p>
+                    <p>Example:</p>
+                    <p>
+                      &#8220;<strong
+                        >5 Ways to Celebrate Navratri with Your Family</strong
+                      >
+                    </p>
+                    <p>
+                      Navratri is a significant Hindu festival that celebrates
+                      the divine feminine. Here are 5 ways to celebrate Navratri
+                      with your family:
+                    </p>
+                    <ul class="wp-block-list">
+                      <li>
+                        Decorate your home with traditional Navratri decorations
+                      </li>
+                      <li>
+                        Cook traditional Navratri dishes like garba and dandiya
+                      </li>
+                      <li>Attend Navratri events and festivals in your area</li>
+                      <li>Watch Navratri-themed movies and TV shows</li>
+                      <li>
+                        Share Navratri wishes and quotes with your loved ones
+                        &#8221;
+                      </li>
+                    </ul>
+                    <ol start="2" class="wp-block-list">
+                      <li>
+                        <strong
+                          >Design Engaging Navratri Social Media Posts</strong
+                        >
+                      </li>
+                    </ol>
+                    <p>
+                      Create engaging social media content, such as videos,
+                      images, and stories, that showcase your brand &#8217;s
+                      festive spirit. Utilize relevant hashtags like #Navratri
+                      and #DurgaPuja to increase visibility and reach a wider
+                      audience.
+                    </p>
+                    <p>Example:</p>
+                    <p>&#8220;<strong>Happy Navratri from Our Team!</strong></p>
+                    <p>
+                      Wishing you a happy and prosperous Navratri! May the
+                      divine feminine bless you with love, light, and happiness.
+                      #Navratri #DurgaPuja #HinduFestival &#8221;
+                    </p>
+                    <ol start="3" class="wp-block-list">
+                      <li>
+                        <strong
+                          >Develop a Navratri-Themed Email Marketing
+                          Campaign</strong
+                        >
+                      </li>
+                    </ol>
+                    <p>
+                      Send out festive-themed email newsletters to your
+                      subscribers, offering exclusive discounts, promotions, or
+                      freebies. Use trending keywords like &#8220;Navratri
+                      Wishes &#8221;and &#8220;Navratri Quotes &#8221;to
+                      optimize your email content.
+                    </p>
+                    <p>Example:</p>
+                    <p>
+                      &#8220;<strong>Navratri Wishes from Our Team!</strong>
+                    </p>
+                    <p>
+                      Wishing you a happy and prosperous Navratri! May the
+                      divine feminine bless you with love, light, and happiness.
+                      As a special Navratri offer, use the code NAVRATRI15 at
+                      checkout to receive 15% off your next purchase.&#8221;
+                    </p>
+                    <ol start="4" class="wp-block-list">
+                      <li>
+                        <strong>Create a Navratri-Themed Video</strong>
+                      </li>
+                    </ol>
+                    <p>
+                      Develop a YouTube video that showcases your brand &#8217;s
+                      Navratri celebrations, such as a traditional dance
+                      performance or a cooking demonstration. Use trending
+                      keywords like &#8220;Navratri Videos &#8221;and
+                      &#8220;Navratri Images &#8221;to optimize your video
+                      content.
+                    </p>
+                    <p>Example:</p>
+                    <p>
+                      &#8220;<strong
+                        >Navratri Dance Performance by Our Team!</strong
+                      >
+                    </p>
+                    <p>
+                      Watch our team perform a traditional Navratri dance,
+                      showcasing the vibrant colors and energy of the festival.
+                      #Navratri #DurgaPuja #HinduFestival &#8221;
+                    </p>
+                    <ol start="5" class="wp-block-list">
+                      <li>
+                        <strong>Host a Navratri-Themed Twitter Chat</strong>
+                      </li>
+                    </ol>
+                    <p>
+                      Host a Twitter chat that discusses the cultural
+                      significance of Navratri, using relevant hashtags like
+                      #Navratri and #DurgaPuja. Encourage your audience to share
+                      their Navratri experiences and traditions.
+                    </p>
+                    <p>Example:</p>
+                    <p>
+                      &#8220;<strong>Join Our Navratri Twitter Chat!</strong>
+                    </p>
+                    <p>
+                      Join us for a Twitter chat on the cultural significance of
+                      Navratri, featuring expert insights and audience Q &amp;A.
+                      Use the hashtag #NavratriChat to participate and share
+                      your thoughts! #Navratri #DurgaPuja &#8221;
+                    </p>
+                    <ol start="6" class="wp-block-list">
+                      <li>
+                        <strong
+                          >Design a Navratri-Themed Instagram Story</strong
+                        >
+                      </li>
+                    </ol>
+                    <p>
+                      Create an engaging Instagram story that showcases your
+                      brand &#8217;s Navratri celebrations, using relevant
+                      hashtags like #Navratri and #DurgaPuja. Encourage your
+                      audience to share their Navratri experiences and
+                      traditions.
+                    </p>
+                    <p>Example:</p>
+                    <p>&#8220;<strong>Happy Navratri from Our Team!</strong></p>
+                    <p>
+                      Wishing you a happy and prosperous Navratri! May the
+                      divine feminine bless you with love, light, and happiness.
+                      Swipe right to see our team &#8217;s Navratri
+                      celebrations! #Navratri #DurgaPuja #HinduFestival &#8221;
+                    </p>
+                    <ol start="7" class="wp-block-list">
+                      <li>
+                        <strong
+                          >Launch a Navratri-Themed Hashtag Campaign</strong
+                        >
+                      </li>
+                    </ol>
+                    <p>
+                      Launch a hashtag campaign that encourages your audience to
+                      share their Navratri celebrations, using relevant hashtags
+                      like #Navratri and #DurgaPuja. Offer incentives like
+                      discounts or freebies to participants.
+                    </p>
+                    <p>Example:</p>
+                    <p>
+                      &#8221;&nbsp;<strong
+                        >Share Your Navratri Celebrations with Us!</strong
+                      >
+                    </p>
+                    <p>
+                      Share your Navratri celebrations with us using the hashtag
+                      #NavratriWithUs! We &#8217;ll feature the best submissions
+                      on our social media channels and offer a special discount
+                      to participants. #Navratri #DurgaPuja #HinduFestival
+                      &#8221;
+                    </p>
+                    <p>
+                      <strong>Conclusion</strong>
+                    </p>
+                    <p>
+                      Navratri is a fantastic opportunity to connect with your
+                      audience, showcase your cultural sensitivity, and boost
+                      your online presence. By incorporating these 7 digital
+                      marketing strategies into your campaign, you can drive
+                      meaningful engagement with your target audience and
+                      increase your online visibility. At Promozione Branding,
+                      we &#8217;re committed to helping businesses succeed in
+                      the digital landscape. If you &#8217;re looking for expert
+                      guidance on how to leverage Navratri for your digital
+                      marketing efforts, feel free to reach out to us. We
+                      &#8217;d be delighted to help you create a successful
+                      campaign that resonates with your audience.
+                      <a
+                        href="https://promozionebranding.com/"
+                        data-type="link"
+                        data-id="https://promozionebranding.com/"
+                        >https://promozionebranding.com/</a
+                      >
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="border">
+              <h3 class="fw-bold mt-3 ms-3">Recent Blogs</h3>
+              <div class="d-flex">
+                <div class="d-flex align-items-center p-3">
+                  <img
+                    src="/img/blog6.webp"
+                    alt="blog1"
+                    height="100px"
+                    width="100px"
+                  />
+                </div>
+                <div class="pe-2">
+                  <p>
+                    <i class="fa-user fa-solid me-2 text-red"></i> BY :
+                    PBPLDELHI
+                  </p>
+                  <p>
+                    <i class="fa-calendar fa-solid me-2 text-red"></i> OCTOBER
+                    21, 2024
+                  </p>
+                  <a
+                    href="/Our-Digital-Marketing-Agency’s-7-Effective.html"
+                    class="fw-bold text-decoration-none text-dark text-danger fs-5"
+                  >
+                    Our Digital Marketing Agency’s 7 Effective Brand Promotion
+                    Strategies for Manufacturers
+                  </a>
+                </div>
+              </div>
+              <hr />
+              <div class="d-flex">
+                <div class="d-flex align-items-center p-3">
+                  <img
+                    src="/img/blog.webp"
+                    alt="blog2"
+                    height="100px"
+                    width="100px"
+                  />
+                </div>
+                <div class="pe-2">
+                  <p>
+                    <i class="fa-user fa-solid me-2 text-red"></i> BY :
+                    PBPLDELHI
+                  </p>
+                  <p>
+                    <i class="fa-calendar fa-solid me-2 text-red"></i> OCTOBER
+                    9, 2024
+                  </p>
+                  <a
+                    href="/4-Festive-Digital-Marketing-Strategies.html"
+                    class="fw-bold text-decoration-none text-dark text-danger fs-5"
+                  >
+                    4 Festive Digital Marketing Strategies to Grow Your Business
+                    During
+                  </a>
+                </div>
+              </div>
+              <hr />
+              <div class="d-flex">
+                <div class="d-flex align-items-center p-3">
+                  <img
+                    src="/img/blog2.webp"
+                    alt="blog3"
+                    height="100px"
+                    width="100px"
+                  />
+                </div>
+                <div class="pe-2">
+                  <p>
+                    <i class="fa-user fa-solid me-2 text-red"></i> BY :
+                    PBPLDELHI
+                  </p>
+                  <p>
+                    <i class="fa-calendar fa-solid me-2 text-red"></i> OCTOBER
+                    6, 2024
+                  </p>
+                  <a
+                    href="/The-Future-of-E-commerce-in-India.html"
+                    class="fw-bold text-decoration-none text-dark text-danger fs-5"
+                  >
+                    The Future of E-commerce in India: Trends and Predictions
+                    for 2024
+                  </a>
+                </div>
+              </div>
+              <hr />
+              <div class="d-flex">
+                <div class="d-flex align-items-center p-3">
+                  <img
+                    src="/img/blog-3.webp"
+                    alt="blog4"
+                    height="100px"
+                    width="100px"
+                  />
+                </div>
+                <div class="pe-2">
+                  <p>
+                    <i class="fa-user fa-solid me-2 text-red"></i> BY :
+                    PBPLDELHI
+                  </p>
+                  <p>
+                    <i class="fa-calendar fa-solid me-2 text-red"></i> OCTOBER
+                    3, 2024
+                  </p>
+                  <a
+                    href="/7-Ways-to-Create-Engaging-Navratri-Content.html"
+                    class="fw-bold text-decoration-none text-dark text-danger fs-5"
+                  >
+                    7 Ways to Create Engaging Navratri Content
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer-section -->
+    <section id="footer-section">
+      <footer class="pt-sm-5 pb-3">
+        <div class="container p-0">
+          <div class="col">
+            <div class="row m-0 px-3">
+              <div class="col-md-3">
+                <div class="footer-section-container">
+                  <div class="">
+                    <img
+                      src="/img/Promozione-Branding-1.gif"
+                      alt="footer-logo"
+                      class="footer-logo"
+                    />
+                  </div>
+                  <p>
+                    Promozione Branding pvt. ltd. isn’t your average digital
+                    marketing agency. We’re a passionate team of award-winning
+                    marketers, designers, and developers who specialize in
+                    crafting tailor-made digital strategies for businesses like
+                    yours.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3" id="footer-services-section">
+                <div class="footer-section-container">
+                  <h4 class="fs-4 mt-4 footer-sections-heading">SERVICES</h4>
+                  <a
+                    href="/service/web-development.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Website Development</p>
+                  </a>
+                  <a
+                    href="/service/performance-branding.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Performance Branding</p>
+                  </a>
+                  <a
+                    href="/service/content-marketing.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Content Marketing</p>
+                  </a>
+                  <a
+                    href="/service/search-engine-optimization.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Search Engine Optimization</p>
+                  </a>
+                  <a
+                    href="/service/lead-generation.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Lead Generation</p>
+                  </a>
+                  <a
+                    href="/service/revenue-marketing.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Revenue Mrketing</p>
+                  </a>
+                  <a
+                    href="/service/social-media-marketing.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Social Media Management</p>
+                  </a>
+                  <a
+                    href="/service/ads-management.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Ads Management</p>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="footer-section-container">
+                  <h4 class="fs-4 mt-4 footer-sections-heading">OTHER LINKS</h4>
+                  <a href="/index.html" class="text-decoration-none text-white">
+                    <p>Home</p>
+                  </a>
+                  <a href="/about.html" class="text-decoration-none text-white">
+                    <p>About Us</p>
+                  </a>
+                  <a
+                    href="/why-choose-us.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p>Why Choose Us</p>
+                  </a>
+                  <h4 class="fs-4 mt-4 footer-sections-heading" id="Resources">
+                    Quick links
+                  </h4>
+                  <a href="/blogs.html" class="text-decoration-none text-white">
+                    <p>Blogs</p>
+                  </a>
+                  <a
+                    href="/career.html"
+                    class="text-decoration-none text-white"
+                  >
+                    <p>Career</p>
+                  </a>
+                  <a
+                    href="/contact.html"
+                    class="text-decoration-none text-white"
+                  >
+                    <p>Get in touch</p>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 footer-insight">
+                <div class="footer-section-container">
+                  <h4 class="fs-4 mt-4" id="footer-contact">GET IN TOUCH</h4>
+                  <p>Vardhman Plaza, Sector-3, Rohini, New Delhi</p>
+                  <p class="text-break">
+                    <a href="mailto:info@promozionebranding.com" class="text-white text-decoration-none">info@promozionebranding.com</a></p>
+                  <p id="dial-button"> 011 42603232</p>
+                  <div class="mt-2">
+                    <a
+                      href="https://www.facebook.com/share/1ATKsvCkfv/"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-facebook m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/promozione.branding/"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-instagram m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/company/Promozione-Branding"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-linkedin m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.whatsapp.com/catalog/919971700871/?app_absent=0"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-whatsapp m-2"></i
+                    ></a>
+                    <a
+                      href="https://x.com/Promozionebrand"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-x-twitter m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.youtube.com/@promozionebranding"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-youtube m-2"></i
+                    ></a>
+                    <a
+                      href="https://in.pinterest.com/promozionebranding/?actingBusinessId=1045890850871277698"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-pinterest m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.snapchat.com/add/promozionebrand?share_id=3WDdtK-T75c&locale=en-IN"
+                      class="text-white text-decoration-none"
+                      ><i
+                        class="fa-brands fa-2x fa-snapchat m-2 mb-4 mb-lg-2"
+                      ></i
+                    ></a>
+                  </div>
+                  <div class="d-flex d-lg-block justify-content-center">
+                    <a
+                      href="https://drive.google.com/file/d/1q-y_yifNVnGDtE6ImUrEKU4Tp-yiwFnc/view?usp=sharing "
+                      class="text-white fw-bold fs-5"
+                      >DOWNLOAD BROCHURE</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3 mt- m-0">
+          <div class="d-lg-flex justify-content-between px-3">
+            <div class="">
+              © Copyright 2024, Promozione Branding, All rights reserved.
+            </div>
+            <div class="">
+              <a href="/sitemap.html" class="text-white footer-link m-0"
+                >Sitemap |</a
+              >
+              <a href="/privacy-policy.html" class="text-white footer-link m-0"
+                >Privacy Policy |</a>
+              <a
+                href="/term-and-condition.html"
+                class="text-white footer-link m-0"
+                >Terms & Condition |</a
+              >
+              <a href="/refund-policy.html" class="text-white footer-link m-0"
+                >Refund Policy</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <input type="radio" name="section" id="section-1" checked />
+      <input type="radio" name="section" id="section-2" />
+      <input type="radio" name="section" id="section-3" />
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/blogs.js"></script>
+  </body>
+</html>

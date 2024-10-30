@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web-development</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/54ab0b6d18.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/career.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <!-- call-button -->
+    <div class="call-button-container">
+      <div class="d-flex" id="dial-button">
+        <div class="call-container d-flex align-items-center">
+          <i class="fa-solid fa-phone phone-icon me-md-2 me-1"></i>
+        </div>
+        <div class="question-container d-flex flex-column">
+          <span class="phone-number">011 42603232</span>
+          <span>Have Query?</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- header navigation bar -->
+    <nav class="navbar navbar-expand-lg fixed-top p-0">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand m-0 p-0" href="#">
+          <img src="/img/logo.gif" id="nav-logo" alt="navbar-logo" />
+        </a>
+
+        <!-- Hamburger button for mobile view -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Offcanvas Menu -->
+        <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/why-choose-us.html">Why Choose Us</a>
+              </li>
+
+              <!-- Services dropdown -->
+              <li class="nav-item dropdown">
+                <div class="d-flex align-items-center">
+                  <!-- Service link for redirection -->
+                  <a class="nav-link" href="/services.html" id="servicesLink"
+                    >Services</a
+                  >
+
+                  <!-- Dropdown toggle on mobile (with caret icon) -->
+                  <button class="dropdown-button" id="dropdownToggleMobile">
+                    <i class="fas fa-caret-down"></i>
+                  </button>
+                </div>
+
+                <!-- Dropdown items -->
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="dropdownToggleMobile"
+                >
+                  <a
+                    href="/service/web-development.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Website Development</p>
+                  </a>
+                  <a
+                    href="/service/performance-branding.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Performance Branding</p>
+                  </a>
+                  <a
+                    href="/service/content-marketing.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Content Marketing</p>
+                  </a>
+                  <a
+                    href="/service/search-engine-optimization.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Search Engine Optimization</p>
+                  </a>
+                  <a
+                    href="/service/lead-generation.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Lead Generation</p>
+                  </a>
+                  <a
+                    href="/service/revenue-marketing.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Revenue Mrketing</p>
+                  </a>
+                  <a
+                    href="/service/social-media-marketing.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Social Media Management</p>
+                  </a>
+                  <a
+                    href="/service/ads-management.html"
+                    class="text-dark text-decoration-none"
+                  >
+                    <p class="">Ads Management</p>
+                  </a>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/career.html">Career</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/blogs.html">Blogs</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- #hero-section -->
+    <section id="hero-section">
+      <div id="hero-section-container">
+        <img src="/img/services-hero.jpeg" alt="hero-section-background" class="" id="hero-section-img">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center services-content"
+        >
+          <h1 class="fw-bold hero-heading text-center" data-aos="fade-right">
+            Career
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="about-career-section" class="py-5">
+      <div class="container">
+        <div class="row m-0">
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="card-body px-md-3">
+              <h4 class="card-subtitle mb-sm-3 mb-2 career-subtitle">
+                Join Our Team
+              </h4>
+              <h2 class="card-title fw-bold fs-1 mb-sm-3 mb-2 career-title">
+                Join us to get more experience
+              </h2>
+              <p class="mb-sm-4 mb-3">
+                Join our team and unlock your potential with exciting growth
+                opportunities. Collaborate, innovate, and make an impact
+                together!
+              </p>
+              <a href="/job-application-form.html" class="get-started-button btn mb-sm-5 mb-3"
+                >Get Started</a
+              >
+              <ul id="counter" class="p-0">
+                <li class="">
+                  <p class="count percent fw-bold mb-2" data-count="30">0</p>
+                  <p class="fs-5 w-50 community-events">
+                    Community Events Hosted Annually
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="/img/smiling man-Photoroom.png"
+              alt="about-careere-img"
+              class="w-100 about-career-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="job-posting-section" class="py-5">
+      <div class="container-md">
+        <div class="row">
+          <h6 class="text-center tagline">Open Roles</h6>
+          <h2 class="text-center fs-1 career-section-heading">
+            Career opportunities
+          </h2>
+          <p class="text-center m-auto mb-2 mb-sm-5 join-team">
+            Join our dynamic digital marketing agency to accelerate your career
+            with innovative strategies and a supportive team culture. Be part of
+            our journey to deliver measurable success for top brands!
+          </p>
+        </div>
+        <div
+          class="row px-lg-5 row-cols-lg-3 row-cols-sm-2 row-cols-md-2 row-cols-1"
+        >
+          <div class="col p-4">
+            <div class="posting-card p-3 px-4 rounded">
+              <p class="full-time">Full Time</p>
+              <h5 class="post-name mb-4">Computer Engineer</h5>
+              <p class="fw-bold font-muted text-muted">
+                <i class="fa-location-dot fa-solid text-dark"></i> Delhi, India
+              </p>
+              <p>
+                We are seeking a skilled and innovative Computer Engineer to
+                join our dynamic team.
+              </p>
+              <a
+                href="/job-application-form.html"
+                class="btn btn-outline-danger apply-now-button fw-bold mb-3"
+                >Apply Now</a
+              >
+              <p class="text-center" width="100%">
+                <a href="https://drive.google.com/file/d/1FObImqnWJaGZ2Em2p58AnjW0CFdizHLj/view" class="fw-bold text-decoration-none text-dark">
+                  View Details
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col p-4">
+            <div class="posting-card p-3 px-4 rounded">
+              <p class="full-time">Full Time</p>
+              <h5 class="post-name mb-4">Website Developer</h5>
+              <p class="fw-bold font-muted text-muted">
+                <i class="fa-location-dot fa-solid text-dark"></i> Noida, India
+              </p>
+              <p>
+                We are seeking a skilled and innovative Website Developer to
+                join our dynamic team.
+              </p>
+              <a
+                href="/job-application-form.html"
+                class="btn btn-outline-danger apply-now-button fw-bold mb-3"
+                >Apply Now</a
+              >
+              <p class="text-center" width="100%">
+                <a href="https://drive.google.com/file/d/1FObImqnWJaGZ2Em2p58AnjW0CFdizHLj/view" class="fw-bold text-decoration-none text-dark">
+                  View Details
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col p-4">
+            <div class="posting-card p-3 px-4 rounded">
+              <p class="full-time">Full Time</p>
+              <h5 class="post-name mb-4">Graphic Designer</h5>
+              <p class="fw-bold font-muted text-muted">
+                <i class="fa-location-dot fa-solid text-dark"></i> Delhi, India
+              </p>
+              <p>
+                We are seeking a skilled and innovative Graphic Designer to join
+                our dynamic team.
+              </p>
+              <a
+                href="/job-application-form.html"
+                class="btn btn-outline-danger apply-now-button fw-bold mb-3"
+                >Apply Now</a
+              >
+              <p class="text-center" width="100%">
+                <a href="https://drive.google.com/file/d/1FObImqnWJaGZ2Em2p58AnjW0CFdizHLj/view" class="fw-bold text-decoration-none text-dark">
+                  View Details
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col p-4">
+            <div class="posting-card p-3 px-4 rounded">
+              <p class="full-time">Full Time</p>
+              <h5 class="post-name mb-4">Business Development</h5>
+              <p class="fw-bold font-muted text-muted">
+                <i class="fa-location-dot fa-solid text-dark"></i> Delhi, India
+              </p>
+              <p>
+                We are seeking a skilled and innovative Business Developer to
+                join our dynamic team.
+              </p>
+              <a
+                href="/job-application-form.html"
+                class="btn btn-outline-danger apply-now-button fw-bold mb-3"
+                >Apply Now</a
+              >
+              <p class="text-center" width="100%">
+                <a href="https://drive.google.com/file/d/1FObImqnWJaGZ2Em2p58AnjW0CFdizHLj/view" class="fw-bold text-decoration-none text-dark">
+                  View Details
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col p-4">
+            <div class="posting-card p-3 px-4 rounded">
+              <p class="full-time">Full Time</p>
+              <h5 class="post-name mb-4">Content Coordinator</h5>
+              <p class="fw-bold font-muted text-muted">
+                <i class="fa-location-dot fa-solid text-dark"></i> Delhi, India
+              </p>
+              <p>
+                We are seeking an organized and proactive Content Coordinator to
+                manage the flow of content creation.
+              </p>
+              <a
+                href="/job-application-form.html"
+                class="btn btn-outline-danger apply-now-button fw-bold mb-3"
+                >Apply Now</a
+              >
+              <p class="text-center" width="100%">
+                <a href="https://drive.google.com/file/d/1FObImqnWJaGZ2Em2p58AnjW0CFdizHLj/view" class="fw-bold text-decoration-none text-dark">
+                  View Details
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="col p-4">
+            <div class="posting-card p-3 px-4 rounded">
+              <p class="full-time">Full Time</p>
+              <h5 class="post-name mb-4">SEO Specialist</h5>
+              <p class="fw-bold font-muted text-muted">
+                <i class="fa-location-dot fa-solid text-dark"></i> Gurugram,
+                India
+              </p>
+              <p>
+                We are looking for a detail-oriented and results-driven SEO
+                Specialist to join our team.
+              </p>
+              <a
+                href="/job-application-form.html"
+                class="btn btn-outline-danger apply-now-button fw-bold mb-3"
+                >Apply Now</a
+              >
+              <p class="text-center" width="100%">
+                <a href="https://drive.google.com/file/d/1FObImqnWJaGZ2Em2p58AnjW0CFdizHLj/view" class="fw-bold text-decoration-none text-dark">
+                  View Details
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer-section -->
+    <section id="footer-section">
+      <footer class="pt-sm-5 pb-3">
+        <div class="container p-0">
+          <div class="col">
+            <div class="row m-0 px-3">
+              <div class="col-md-3">
+                <div class="footer-section-container">
+                  <div class="">
+                    <img
+                      src="/img/Promozione-Branding-1.gif"
+                      alt="footer-logo"
+                      class="footer-logo"
+                    />
+                  </div>
+                  <p>
+                    Promozione Branding pvt. ltd. isn’t your average digital
+                    marketing agency. We’re a passionate team of award-winning
+                    marketers, designers, and developers who specialize in
+                    crafting tailor-made digital strategies for businesses like
+                    yours.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3" id="footer-services-section">
+                <div class="footer-section-container">
+                  <h4 class="fs-4 mt-4 footer-sections-heading">SERVICES</h4>
+                  <a
+                    href="/service/web-development.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Website Development</p>
+                  </a>
+                  <a
+                    href="/service/performance-branding.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Performance Branding</p>
+                  </a>
+                  <a
+                    href="/service/content-marketing.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Content Marketing</p>
+                  </a>
+                  <a
+                    href="/service/search-engine-optimization.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Search Engine Optimization</p>
+                  </a>
+                  <a
+                    href="/service/lead-generation.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Lead Generation</p>
+                  </a>
+                  <a
+                    href="/service/revenue-marketing.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Revenue Mrketing</p>
+                  </a>
+                  <a
+                    href="/service/social-media-marketing.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Social Media Management</p>
+                  </a>
+                  <a
+                    href="/service/ads-management.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Ads Management</p>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="footer-section-container">
+                  <h4 class="fs-4 mt-4 footer-sections-heading">OTHER LINKS</h4>
+                  <a href="/index.html" class="text-decoration-none text-white">
+                    <p>Home</p>
+                  </a>
+                  <a href="/about.html" class="text-decoration-none text-white">
+                    <p>About Us</p>
+                  </a>
+                  <a
+                    href="/why-choose-us.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p>Why Choose Us</p>
+                  </a>
+                  <h4 class="fs-4 mt-4 footer-sections-heading" id="Resources">
+                    Quick links
+                  </h4>
+                  <a href="/blogs.html" class="text-decoration-none text-white">
+                    <p>Blogs</p>
+                  </a>
+                  <a
+                    href="/career.html"
+                    class="text-decoration-none text-white"
+                  >
+                    <p>Career</p>
+                  </a>
+                  <a
+                    href="/contact.html"
+                    class="text-decoration-none text-white"
+                  >
+                    <p>Get in touch</p>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 footer-insight">
+                <div class="footer-section-container">
+                  <h4 class="fs-4 mt-4" id="footer-contact">GET IN TOUCH</h4>
+                  <p>Vardhman Plaza, Sector-3, Rohini, New Delhi</p>
+                  <p class="text-break">
+                    <a href="mailto:info@promozionebranding.com" class="text-white text-decoration-none">info@promozionebranding.com</a></p>
+                  <p id="dial-button"> 011 42603232</p>
+                  <div class="mt-2">
+                    <a
+                      href="https://www.facebook.com/share/1ATKsvCkfv/"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-facebook m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/promozione.branding/"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-instagram m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/company/Promozione-Branding"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-linkedin m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.whatsapp.com/catalog/919971700871/?app_absent=0"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-whatsapp m-2"></i
+                    ></a>
+                    <a
+                      href="https://x.com/Promozionebrand"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-x-twitter m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.youtube.com/@promozionebranding"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-youtube m-2"></i
+                    ></a>
+                    <a
+                      href="https://in.pinterest.com/promozionebranding/?actingBusinessId=1045890850871277698"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-pinterest m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.snapchat.com/add/promozionebrand?share_id=3WDdtK-T75c&locale=en-IN"
+                      class="text-white text-decoration-none"
+                      ><i
+                        class="fa-brands fa-2x fa-snapchat m-2 mb-4 mb-lg-2"
+                      ></i
+                    ></a>
+                  </div>
+                  <div class="d-flex d-lg-block justify-content-center">
+                    <a
+                      href="https://drive.google.com/file/d/1q-y_yifNVnGDtE6ImUrEKU4Tp-yiwFnc/view?usp=sharing "
+                      class="text-white fw-bold fs-5"
+                      >DOWNLOAD BROCHURE</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3 mt- m-0">
+          <div class="d-lg-flex justify-content-between px-3">
+            <div class="">
+              © Copyright 2024, Promozione Branding, All rights reserved.
+            </div>
+            <div class="">
+              
+              <a href="/sitemap.html" class="text-white footer-link m-0"
+                >Sitemap |</a
+              >
+              <a href="/privacy-policy.html" class="text-white footer-link m-0"
+                >Privacy Policy |</a>
+              <a
+                href="/term-and-condition.html"
+                class="text-white footer-link m-0"
+                >Terms & Condition |</a
+              >
+              <a href="/refund-policy.html" class="text-white footer-link m-0"
+                >Refund Policy</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <input type="radio" name="section" id="section-1" checked />
+      <input type="radio" name="section" id="section-2" />
+      <input type="radio" name="section" id="section-3" />
+      <input type="radio" name="section" id="section-4" />
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+    <script src="/js/career.js"></script>
+  </body>
+</html>
+<!-- created and developed by arjunprajapat2002211@gmail.com -->

@@ -1,0 +1,727 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  letter-spacing: 0.7;
+}
+
+.text-red {
+  color: rgb(254, 68, 0);
+}
+
+/* call-button-container */
+.call-button-container {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    background-color: rgb(254, 68, 0);
+    z-index: 1000;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50px;
+  }
+  .call-button-container:hover {
+    cursor: pointer;
+  }
+  
+  .phone-icon1 {
+    position: static;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+  @media screen and (max-width: 653px) {
+    .call-button-container {
+      padding: 2px 10px;
+      right: 10px;
+    }
+    .phone-icon1 {
+      padding: 10px;
+      margin-right: 3px !important ;
+    }
+  }
+
+
+/* navbar */
+/* Ensure the close icon shows when the hamburger menu is open */
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath d='M18 6L6 18M6 6l12 12'/%3E%3C/svg%3E");
+}
+
+/* Desktop: Dropdown opens on hover */
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block !important;
+  }
+  .d-lg-none {
+    display: block !important;
+  }
+}
+@media (max-width: 992px) {
+  #dropdownIcon {
+    position: static !important;
+  }
+  .rotate-button {
+    transform: rotate(180deg);
+  }
+  .show {
+    display: block !important;
+  }
+}
+
+/* Mobile: Ensure dropdown menu is hidden initially */
+.nav-item .dropdown-menu {
+  display: none;
+}
+nav {
+  background-color: white !important;
+  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.223) !important;
+}
+#nav-logo {
+  height: 80px;
+  object-fit: cover !important;
+}
+
+.nav-item {
+  margin: 0px 10px;
+}
+.navbar-toggler-icon {
+  z-index: 1000;
+}
+
+/* Show dropdown menu when 'show' class is added */
+
+.nav-link {
+  color: black !important;
+}
+
+/* Align the Services link and caret icon next to each other on mobile */
+.d-flex.align-items-center {
+  display: flex;
+  align-items: center;
+}
+.dropdown-menu {
+  border: none !important;
+  background-color: white !important;
+  padding: 10px !important;
+  box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.489);
+  width: 200px;
+}
+
+/* Fix dropdown icon position on mobile */
+.dropdown-toggle-icon {
+  padding-left: 5px !important;
+}
+
+/* Make dropdown icon visible on all screens and rotate 180 degrees on click */
+.dropdown-toggle-icon {
+  transition: transform 0.3s ease-in-out; /* Smooth transition for rotation */
+  padding-left: 5px !important; /* Ensure padding is visible across all screens */
+}
+
+.nav-item .dropdown.show .dropdown-toggle-icon {
+  transform: rotate(
+    180deg
+  ); /* Rotate the icon 180 degrees when dropdown is open */
+}
+
+/* Show dropdown on hover for large screens */
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+.dropdown-container {
+  display: inline-flex;
+  align-items: center;
+  width: 200px !important;
+}
+.dropdown-menu {
+  width: 200px !important;
+}
+
+.dropdown-toggle::after {
+  padding-left: 5px;
+}
+
+.dropdown-button {
+  border: none;
+  background: transparent;
+  padding-left: 5px;
+}
+.dropdown-item {
+  padding: 7px 0px !important;
+}
+
+/* #hero-section */
+
+#hero-section-container {
+  height: 450px;
+  width: 100%;
+}
+
+#hero-section-img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  position: absolute;
+}
+
+.services-content {
+  width: 100%;
+  height: 100%;
+}
+
+#hero-section-container::before {
+  content: "";
+  width: 100%;
+  height: 450px;
+  top: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.497) center center/cover;
+  z-index: 1;
+}
+
+.hero-heading {
+  color: white;
+  font-size: 5rem;
+  font-family: urbanist, sans-serif;
+  z-index: 2;
+}
+
+/* #about section */
+
+.detail-col {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid rgb(190, 190, 190);
+  margin: 10px;
+}
+
+#about-hotel-name {
+  color: orange;
+}
+
+.about-text {
+  padding-left: 8%;
+}
+
+.about-left {
+  margin: 0px;
+}
+
+.about-us {
+  padding: 0px 15px;
+}
+
+.about-heading {
+  font-size: 4rem;
+}
+
+#explore {
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 2px;
+  background-color: orange;
+}
+
+.about-image .row .col {
+  padding: 10px;
+  width: 50%;
+}
+
+.wcu-money-section {
+  border: red 2px solid;
+  position: relative;
+  width: 56px;
+  height: 56px;
+}
+
+.left-title,
+.about-heading,
+.promise,
+.number {
+  font-family: "Poppins", sans-serif;
+}
+
+.about-heading {
+  font-weight: 700;
+}
+
+.promise {
+  display: flex;
+  font-family: poppins;
+}
+
+.phone-icon {
+  padding: 0.9rem;
+  width: 60.79px;
+  color: black !important;
+  height: 60.79px;
+  border: 2px solid red;
+  border-radius: 70px;
+}
+
+.about-img-container {
+  gap: 10px;
+  background-color: orange;
+}
+
+.card {
+  transition: all ease 0.4s;
+  /* background-color: rgb(255, 244, 246); */
+}
+
+.card:hover {
+  scale: 1.03;
+}
+
+.about-heading {
+  font-size: 3rem;
+}
+
+.detail-col {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-1 {
+  text-align: right;
+  margin-top: 25%;
+}
+
+.img-1 img {
+  width: 75%;
+}
+
+.img-2 {
+  text-align: left;
+  margin-top: 8%;
+}
+
+.img-2 img {
+  width: 85%;
+}
+
+.img-3 {
+  text-align: right;
+}
+
+.img-3 img {
+  width: 75%;
+}
+
+.img-4 {
+  text-align: left;
+}
+
+.img-4 img {
+  width: 75%;
+}
+
+/* portfolio-section */
+/* -----------------------------------
+        Gallery Section
+  --------------------------------------*/
+.portfolio-section {
+  padding: 50px 0;
+  background: rgb(254, 68, 0);
+}
+
+.portfolio-section h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.portfolio-menu {
+  text-align: center;
+}
+
+.control {
+  padding: 8px 13px;
+  border: none;
+  border-radius: 3px;
+  margin: 5px;
+  cursor: pointer;
+  -webkit-transition: all 05s ease;
+  -moz-transition: all 05s ease;
+  -ms-transition: all 05s ease;
+  -o-transition: all 05s ease;
+  transition: all 0.5s ease;
+}
+
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  appearance: button;
+}
+
+.control:hover {
+  background: #343a40;
+  color: white;
+}
+
+.mixitup-control-active {
+  color: #fff;
+  background: #343a40;
+}
+
+.fancybox-container button:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.portfolio-item {
+  padding-top: 30px;
+}
+
+.pd {
+  padding: 0;
+  padding: 10px;
+}
+
+.pd img {
+  height: 180px;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.portfolio-item > li {
+  list-style: none;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  visibility: hidden;
+  transition: all 0.5s;
+  transform: scale(0);
+}
+
+.portfolio-overlay p,
+.portfolio-overlay a {
+  position: relative;
+  z-index: 4;
+}
+
+.portfolio-overlay::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: 0;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  transition: 50ms height ease 150ms;
+  z-index: 3;
+}
+
+.portfolio-overlay::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-width: 0;
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+  transition: 100ms width ease 200ms;
+  z-index: 3;
+}
+
+.portfolio-item:hover .portfolio-overlay::before {
+  width: 80%;
+  height: 80%;
+  border-top: 1px solid #50977f;
+  border-right: 1px solid #50977f;
+  transition: width 0.1s ease 0.3s, height 0.1s ease 0.5s;
+}
+
+.portfolio-item:hover .portfolio-overlay::after {
+  width: 80%;
+  height: 80%;
+  border-bottom: 1px solid #50977f;
+  border-left: 1px solid #50977f;
+  transition: width 0.1s ease 0.6s, height 0.1s ease 0.7s;
+}
+
+.portfolio-item li:hover .portfolio-overlay {
+  visibility: visible;
+  transform: scale(1);
+}
+
+.portfolio-overlay .category {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.portfolio-overlay .magnify-icon {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  background: #50977f;
+  margin: 0 5px;
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.25s;
+}
+
+.portfolio-overlay .magnify-icon:hover {
+  background: #000;
+}
+
+.portfolio-overlay .magnify-icon p span i {
+  font-size: 15px;
+  color: #fff;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+/*******Responsive media query******/
+
+/* Extra small devices (portrait phones, less than 576px)*/
+
+/* testimonial section */
+.box-area {
+  padding: 30px;
+  position: relative;
+  display: block;
+  background: #fff;
+  color: #000;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 40px 0;
+  height: 21rem;
+}
+
+.box-area h5 {
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(254, 68, 0);
+  margin-top: 30px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  /* letter-spacing: 1px; */
+}
+
+.box-area span {
+  color: #262626;
+  display: block;
+  font-size: 13px;
+  margin: 0 0 10px;
+  font-weight: 400;
+}
+
+.box-area .content {
+  color: #262626;
+}
+
+.box-area .img-area {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  right: 0;
+  z-index: 1;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.box-area .img-area img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.socials {
+  margin-top: 30px;
+}
+
+.socials i {
+  margin: 0 10px;
+  color: #0a69ed;
+  font-size: 18px;
+}
+
+#testimonial_area .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+#testimonial_area .owl-prev,
+#testimonial_area .owl-next {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: #0a69ed;
+  border-radius: 50%;
+  text-align: center;
+  background: #fff;
+  position: absolute;
+}
+
+#testimonial_area .owl-prev {
+  left: -60px;
+  top: -30px;
+}
+
+#testimonial_area .owl-next {
+  right: -60px;
+  top: -30px;
+}
+
+/* footer-section */
+#footer-section {
+  color: white;
+  position: static;
+  /* background: black; */
+  background: url("/img/nasa-Q1p7bh3SHj8-unsplash.jpg") center center/cover;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.footer-link {
+  color: white;
+  text-decoration: none;
+  margin: 0px 15px;
+}
+
+/* scroll-indicator */
+/* Style for the Scroll Indicator */
+.scroll-indicator {
+  background-color: white;
+  padding: 13px 7px;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 5;
+  border-radius: 10px 0px 0px 10px;
+  box-shadow: -6px 1px 10px #80808042;
+}
+
+.scroll-indicator input[type="radio"] {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: rgb(254, 68, 0);
+  cursor: pointer;
+  margin: 5px;
+}
+
+.scroll-indicator input[type="radio"]:checked {
+  border-color: black;
+  /* Active color for checked radio button */
+  background-color: black;
+  /* Active color for checked radio button */
+}
+
+@media screen and (max-width: 1000px) {
+  .menus {
+    display: hidden;
+    background: white;
+    margin-right: -100%;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.215);
+    width: 200px;
+  }
+
+  .menus > ul > li {
+    float: unset;
+    margin: 0px 10px;
+    padding: 10px 19px;
+  }
+
+  .hamburger {
+    display: inline;
+    right: 0;
+    position: absolute;
+  }
+
+  .navigation-bar {
+    position: static !important;
+  }
+
+  .logo {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .owl-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  #footer-services-section {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 746px) {
+  .hero-heading {
+    font-size: 3rem;
+    width: 80%;
+  }
+
+  #about-service-heading {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer-section-container > a > p {
+    margin: 3px 0px;
+  }
+
+  .footer-section-container > p {
+    margin: 0px;
+  }
+
+  .footer-sections-heading {
+    margin-top: 1.2rem !important;
+  }
+
+  .about-text {
+    padding: 2%;
+  }
+}

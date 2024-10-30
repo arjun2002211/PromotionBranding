@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /tests/
+Disallow: /login                  # Block login page if it exists
+Disallow: /contact us/           
+Allow: /                          # Allow all other pages by default
+
+# Reference to sitemap for better indexing
+Sitemap: https://promotionbranding.com/sitemap.xml
+
+
+

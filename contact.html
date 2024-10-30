@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/54ab0b6d18.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+
+  <body>
+    <!-- call-button -->
+     <!-- created and developed by arjunprajapat2002211@gmail.com -->
+    <div class="call-button-container">
+      <div class="d-flex" id="dial-button">
+        <div class="call-container d-flex align-items-center">
+          <i class="fa-solid fa-phone phone-icon me-md-2 me-1"></i>
+        </div>
+        <div class="question-container d-flex flex-column">
+          <span class="phone-number">011 42603232</span>
+          <span>Have Query?</span>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <!-- header navigation bar -->
+      <nav class="navbar navbar-expand-lg fixed-top p-0">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand m-0 p-0" href="#">
+            <img src="/img/logo.gif" id="nav-logo" alt="navbar-logo" />
+          </a>
+
+          <!-- Hamburger button for mobile view -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Offcanvas Menu -->
+          <div class="offcanvas offcanvas-end" id="offcanvasNavbar">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/why-choose-us.html"
+                    >Why Choose Us</a
+                  >
+                </li>
+
+                <!-- Services dropdown -->
+                <li class="nav-item dropdown">
+                  <div class="d-flex align-items-center">
+                    <!-- Service link for redirection -->
+                    <a class="nav-link" href="/services.html" id="servicesLink"
+                      >Services</a
+                    >
+
+                    <!-- Dropdown toggle on mobile (with caret icon) -->
+                    <button class="dropdown-button" id="dropdownToggleMobile">
+                      <i class="fas fa-caret-down"></i>
+                    </button>
+                  </div>
+
+                  <!-- Dropdown items -->
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownToggleMobile"
+                  >
+                    <a
+                      href="/service/web-development.html"
+                      class="text-dark text-decoration-none"
+                    >
+                      <p class="">Website Development</p>
+                    </a>
+                    <a
+                      href="/service/performance-branding.html"
+                      class="text-dark text-decoration-none"
+                    >
+                      <p class="">Performance Branding</p>
+                    </a>
+                    <a
+                      href="/service/content-marketing.html"
+                      class="text-dark text-decoration-none"
+                    >
+                      <p class="">Content Marketing</p>
+                    </a>
+                    <a
+                      href="/service/search-engine-optimization.html"
+                      class="text-dark text-decoration-none"
+                    >
+                      <p class="">Search Engine Optimization</p>
+                    </a>
+                    <a
+                      href="/service/lead-generation.html"
+                      class="text-dark text-decoration-none"
+                    >
+                      <p class="">Lead Generation</p>
+                    </a>
+                    <a
+                      href="/service/revenue-marketing.html"
+                      class="text-dark text-decoration-none"
+                    >
+                      <p class="">Revenue Mrketing</p>
+                    </a>
+                    <a
+                      href="/service/social-media-marketing.html"
+                      class="text-dark text-decoration-none"
+                    >
+                      <p class="">Social Media Management</p>
+                    </a>
+                    <a
+                      href="/service/ads-management.html"
+                      class="text-dark text-decoration-none"
+                    >
+                      <p class="">Ads Management</p>
+                    </a>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/career.html">Career</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/blogs.html">Blogs</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="hero-section">
+      <div id="hero-section-container">
+        <img
+          src="img/about-page-hero.jpeg"
+          alt="hero-background-img"
+          class=""
+          id="hero-section-img"
+        />
+        <div
+          class="d-flex flex-column justify-content-center align-items-center services-content"
+        >
+          <h1 class="fw-bold hero-heading" data-aos="fade-right">
+            Contacts Us
+          </h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" id="form-section">
+      <div class="row text-center m-0">
+        <h5 class="mb-4">Have any Query ?</h5>
+        <h1 class="fw-bold">Contact Us</h1>
+      </div>
+      <div class="form-container">
+        <span class="big-circle"></span>
+        <!-- <img src="img/shape.png" class="square" alt="" /> -->
+        <div class="form" data-aos="fade-up">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <p class="text">
+              Looking for a Top Digital Marketing Agency in Delhi NCR?
+            </p>
+
+            <div class="info">
+              <div class="information">
+                <i class="fas fa-map-marker-alt"></i> &nbsp; &nbsp;
+                <p>Vardhman Plaza, Sector-3, Rohini, New Delhi</p>
+              </div>
+              <div class="information">
+                <i class="fas fa-envelope"></i> &nbsp &nbsp
+                <p> <a href="mailto:info@promozionebranding.com" class="text-dark text-decoration-none">info@promozionebranding.com</a></p>
+              </div>
+              <div class="information">
+                <i class="fas fa-phone"></i>&nbsp&nbsp
+                <p>011 4260 3232</p>
+              </div>
+            </div>
+
+            <div class="social-media">
+              <p>Connect with us :</p>
+              <div class="social-icons">
+                <a
+                  href="https://www.facebook.com/share/1ATKsvCkfv/"
+                  class="text-white text-decoration-none"
+                  ><i class="fa-brands fa-facebook mx-1"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/promozione.branding/"
+                  class="text-white text-decoration-none"
+                  ><i class="fa-brands fa-instagram mx-1"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/company/Promozione-Branding"
+                  class="text-white text-decoration-none"
+                  ><i class="fa-brands fa-linkedin mx-1"></i
+                ></a>
+                <a
+                  href="https://www.whatsapp.com/catalog/919971700871/?app_absent=0"
+                  class="text-white text-decoration-none"
+                  ><i class="fa-brands fa-whatsapp mx-1"></i
+                ></a>
+              </div>
+              <div class="social-icons">
+                <a
+                  href="https://x.com/Promozionebrand"
+                  class="text-white text-decoration-none"
+                  ><i class="fa-brands fa-x-twitter mx-1"></i
+                ></a>
+                <a
+                  href="https://www.youtube.com/@promozionebranding"
+                  class="text-white text-decoration-none"
+                  ><i class="fa-brands fa-youtube mx-1"></i
+                ></a>
+                <a
+                  href="https://in.pinterest.com/promozionebranding/?actingBusinessId=1045890850871277698"
+                  class="text-white text-decoration-none"
+                  ><i class="fa-brands fa-pinterest mx-1"></i
+                ></a>
+                <a
+                  href="https://www.snapchat.com/add/promozionebrand?share_id=3WDdtK-T75c&locale=en-IN"
+                  class="text-white text-decoration-none"
+                  ><i class="fa-brands fa-snapchat mx-1"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+
+            <form
+              id="contact-form"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              novalidate
+              class="needs-validation"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="ff21a11f-1869-438f-adb1-bfef8d59975e"
+              />
+              <!-- Custom URL -->
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://promotionbranding.com/contact.html"
+              />
+              <h3 class="title">Contact us</h3>
+              <div class="input-container">
+                <input type="text" name="name" class="input" id="name" />
+                <label for="">Name</label>
+                <span>Name</span>
+              </div>
+              <div class="input-container">
+                <input type="number" name="phone" id="phone" class="input" />
+                <label for="">Phone</label>
+                <span>Phone</span>
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" id="email" class="input" />
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <div class="input-container textarea m-0">
+                <textarea name="message" id="message" class="input"></textarea>
+                <label for="">Message</label>
+                <span>Message</span>
+              </div>
+              <div class="alert p-0" id="form-alert"></div>
+              <input type="submit" value="Send" class="form-btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5732.557306484636!2d77.11445468145557!3d28.6990613032323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1727348580829!5m2!1sen!2sin"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading=""
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <!-- footer-section -->
+    <section id="footer-section">
+      <footer class="pt-sm-5 pb-3">
+        <div class="container p-0">
+          <div class="col">
+            <div class="row m-0 px-3">
+              <div class="col-md-3">
+                <div class="footer-section-container">
+                  <div class="">
+                    <img
+                      src="/img/Promozione-Branding-1.gif"
+                      alt="footer-logo"
+                      class="footer-logo"
+                    />
+                  </div>
+                  <p>
+                    Promozione Branding pvt. ltd. isn’t your average digital
+                    marketing agency. We’re a passionate team of award-winning
+                    marketers, designers, and developers who specialize in
+                    crafting tailor-made digital strategies for businesses like
+                    yours.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3" id="footer-services-section">
+                <div class="footer-section-container">
+                  <h4 class="fs-4 mt-4 footer-sections-heading">SERVICES</h4>
+                  <a
+                    href="/service/web-development.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Website Development</p>
+                  </a>
+                  <a
+                    href="/service/performance-branding.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Performance Branding</p>
+                  </a>
+                  <a
+                    href="/service/content-marketing.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Content Marketing</p>
+                  </a>
+                  <a
+                    href="/service/search-engine-optimization.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Search Engine Optimization</p>
+                  </a>
+                  <a
+                    href="/service/lead-generation.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Lead Generation</p>
+                  </a>
+                  <a
+                    href="/service/revenue-marketing.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Revenue Mrketing</p>
+                  </a>
+                  <a
+                    href="/service/social-media-marketing.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Social Media Management</p>
+                  </a>
+                  <a
+                    href="/service/ads-management.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p class="">Ads Management</p>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="footer-section-container">
+                  <h4 class="fs-4 mt-4 footer-sections-heading">OTHER LINKS</h4>
+                  <a href="/index.html" class="text-decoration-none text-white">
+                    <p>Home</p>
+                  </a>
+                  <a href="/about.html" class="text-decoration-none text-white">
+                    <p>About Us</p>
+                  </a>
+                  <a
+                    href="/why-choose-us.html"
+                    class="text-white text-decoration-none"
+                  >
+                    <p>Why Choose Us</p>
+                  </a>
+                  <h4 class="fs-4 mt-4 footer-sections-heading" id="Resources">
+                    Quick links
+                  </h4>
+                  <a href="/blogs.html" class="text-decoration-none text-white">
+                    <p>Blogs</p>
+                  </a>
+                  <a
+                    href="/career.html"
+                    class="text-decoration-none text-white"
+                  >
+                    <p>Career</p>
+                  </a>
+                  <a
+                    href="/contact.html"
+                    class="text-decoration-none text-white"
+                  >
+                    <p>Get in touch</p>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3 footer-insight">
+                <div class="footer-section-container">
+                  <h4 class="fs-4 mt-4" id="footer-contact">GET IN TOUCH</h4>
+                  <p>Vardhman Plaza, Sector-3, Rohini, New Delhi</p>
+                  <p class="text-break">
+                    <a href="mailto:info@promozionebranding.com" class="text-white text-decoration-none">info@promozionebranding.com</a></p>
+                  <p id="dial-button"> 011 42603232</p>
+                  <div class="mt-2">
+                    <a
+                      href="https://www.facebook.com/share/1ATKsvCkfv/"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-facebook m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.instagram.com/promozione.branding/"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-instagram m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/company/Promozione-Branding"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-linkedin m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.whatsapp.com/catalog/919971700871/?app_absent=0"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-whatsapp m-2"></i
+                    ></a>
+                    <a
+                      href="https://x.com/Promozionebrand"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-x-twitter m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.youtube.com/@promozionebranding"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-youtube m-2"></i
+                    ></a>
+                    <a
+                      href="https://in.pinterest.com/promozionebranding/?actingBusinessId=1045890850871277698"
+                      class="text-white text-decoration-none"
+                      ><i class="fa-brands fa-2x fa-pinterest m-2"></i
+                    ></a>
+                    <a
+                      href="https://www.snapchat.com/add/promozionebrand?share_id=3WDdtK-T75c&locale=en-IN"
+                      class="text-white text-decoration-none"
+                      ><i
+                        class="fa-brands fa-2x fa-snapchat m-2 mb-4 mb-lg-2"
+                      ></i
+                    ></a>
+                  </div>
+                  <div class="d-flex d-lg-block justify-content-center">
+                    <a
+                      href="https://drive.google.com/file/d/1q-y_yifNVnGDtE6ImUrEKU4Tp-yiwFnc/view?usp=sharing "
+                      class="text-white fw-bold fs-5"
+                      >DOWNLOAD BROCHURE</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3 mt- m-0">
+          <div class="d-lg-flex justify-content-between px-3">
+            <div class="">
+              © Copyright 2024, Promozione Branding, All rights reserved.
+            </div>
+            <div class="">
+              <a href="/sitemap.html" class="text-white footer-link m-0"
+                >Sitemap |</a
+              >
+              <a href="/privacy-policy.html" class="text-white footer-link m-0"
+                >Privacy Policy |</a>
+              <a
+                href="/term-and-condition.html"
+                class="text-white footer-link m-0"
+                >Terms & Condition |</a
+              >
+              <a href="/refund-policy.html" class="text-white footer-link m-0"
+                >Refund Policy</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <input type="radio" name="section" id="section-1" checked />
+      <input type="radio" name="section" id="section-2" />
+      <input type="radio" name="section" id="section-3" />
+      <input type="radio" name="section" id="section-4" />
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/contact.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
