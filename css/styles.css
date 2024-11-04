@@ -369,18 +369,6 @@ main
   }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Work Sans", sans-serif;
-}
-
-body,
-html {
-  height: 100%;
-  font-family: Arial, sans-serif;
-}
 
 .text-red {
   color: rgb(254, 68, 0);
@@ -610,7 +598,7 @@ input[type="number"] {
   object-fit: cover;
 }
 
-/
+
 /* navbar */
 /* Ensure the close icon shows when the hamburger menu is open */
 .navbar-toggler.collapsed .navbar-toggler-icon {
