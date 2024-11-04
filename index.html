@@ -8,7 +8,7 @@
       name="description"
       content="Looking for Delhi NCR’s top digital marketing agency? Promozione Branding excels in SEO, PPC, social media, and web development. Contact us!"
     />
-    <link rel="canonical" href="https://promotionbranding.com/" />
+    <link rel="canonical" href="https://www.promotionbranding.com/" />
     <link
       rel="icon"
       type="image/x-icon"
@@ -45,6 +45,21 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="//cdn-images.mailchimp.com/embedcode/classic-061523.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style type="text/css">
+      #mc_embed_signup {
+        background: #fff;
+        clear: left;
+        font: 14px Helvetica, Arial, sans-serif;
+        width: 600px;
+      }
+      /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/54ab0b6d18.js"
@@ -151,7 +166,7 @@
     <nav class="navbar navbar-expand-lg fixed-top p-0">
       <div class="container-fluid">
         <!-- Logo -->
-        <a class="navbar-brand m-0 p-0" href="#">
+        <a class="navbar-brand m-0 p-0" href="/">
           <img src="/img/logo.gif" id="nav-logo" alt="logo" />
         </a>
 
@@ -181,12 +196,12 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/index.html"
+                <a class="nav-link" aria-current="page" href="/"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/about.html">About</a>
+                <a class="nav-link" href="/about.html">About Us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/why-choose-us.html">Why Choose Us</a>
@@ -1102,13 +1117,48 @@
           <div class="section-1-content">
             <h1 class="section-1-title">Subscribe to Our Newsletter</h1>
             <p class="section-1-desc">
-              We are 100+ professional software engineers with mor the 10 years
-              in delive ring super products it because you’ve seen it.
+              We are 100+ professional software engineers with more than 10
+              years delivering super products.
             </p>
-            <form class="section-1-form">
-              <input type="email" placeholder="Enter E-mail Address" required />
-              <button>Join Waitlist</button>
-            </form>
+            <div id="mc_embed_shell">
+              <div id="mc_embed_signup">
+                <form id="newsletterForm" name="mc-embedded-subscribe-form">
+                  <div id="mc_embed_signup_scroll">
+                    <div class="indicates-required">
+                      <span class="asterisk">*</span> indicates required
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-EMAIL">
+                        Email Address <span class="asterisk">*</span>
+                      </label>
+                      <input
+                        type="email"
+                        name="EMAIL"
+                        class="required email"
+                        id="mce-EMAIL"
+                        required
+                      />
+                    </div>
+                    <div class="clear foot">
+                      <input
+                        type="submit"
+                        name="subscribe"
+                        class="button"
+                        value="Subscribe"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div
+              id="successAlert"
+              class="alert alert-success mt-3"
+              role="alert"
+              style="display: none"
+            >
+              You have subscribed to the newsletter successfully!
+            </div>
             <p class="section-1-alt-txt">
               <img
                 src="https://rvs-hosterr-waitlist-page.vercel.app/Assets/Checkmark.svg"
@@ -1141,6 +1191,32 @@
       </section>
     </main>
 
+    <script>
+      document
+        .getElementById("newsletterForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const email = document.getElementById("mce-EMAIL").value;
+          const script = document.createElement("script");
+          script.src = `https://gmail.us13.list-manage.com/subscribe/post-json?u=6786855ff8dcacfc3270a1d08&id=bf6ef109ac&EMAIL=${encodeURIComponent(
+            email
+          )}&c=callbackFunction`;
+
+          document.body.appendChild(script);
+
+          window.callbackFunction = function (data) {
+            if (data.result === "success") {
+              document.getElementById("successAlert").style.display = "block";
+              document.getElementById("newsletterForm").reset();
+            } else {
+              alert("Subscription failed: " + data.msg);
+            }
+            document.body.removeChild(script);
+          };
+        });
+    </script>
+
     <!-- footer-section -->
     <section id="footer-section">
       <footer class="pt-sm-5 pb-3">
@@ -1157,11 +1233,12 @@
                     />
                   </div>
                   <p>
-                    Promozione Branding pvt. ltd. isn’t your average digital
-                    marketing agency. We’re a passionate team of award-winning
-                    marketers, designers, and developers who specialize in
-                    crafting tailor-made digital strategies for businesses like
-                    yours.
+                    Promozione Branding is a <span class="fw-bold">top digital marketing agency in Delhi
+                NCR</span>, delivering real, measurable results. Our award-winning team
+                specializes in
+                <span class="fw-bold">SEO, PPC, Social Media,</span> and
+                <span class="fw-bold">Web Development</span> to boost revenue
+                and generate quality leads.
                   </p>
                 </div>
               </div>

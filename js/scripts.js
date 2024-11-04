@@ -107,3 +107,4 @@ dialButton.addEventListener("click", () => {
   const url = `tel:${phoneNumber}`;
   window.location.href = url;
 });
+
