@@ -179,7 +179,7 @@ input[type=number]::-webkit-outer-spin-button {
   left: 0;
   display: block;
   position: absolute;
-  background: rgba(0, 0, 0, 0.497) center center/cover;
+  /* background: rgba(0, 0, 0, 0.497) center center/cover; */
   z-index: 1;
 }
 

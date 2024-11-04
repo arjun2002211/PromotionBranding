@@ -163,6 +163,7 @@ nav {
   height: 100%;
 }
 
+/* Hero-section */
 #hero-section-container::before {
   content: "";
   width: 100%;
@@ -171,7 +172,7 @@ nav {
   left: 0;
   display: block;
   position: absolute;
-  background: rgba(0, 0, 0, 0.497) center center/cover;
+  /* background: rgba(0, 0, 0, 0.497) center center/cover; */
   z-index: 1;
 }
 
